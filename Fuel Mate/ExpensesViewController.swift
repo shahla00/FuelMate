@@ -185,12 +185,20 @@ extension ExpensesViewController {
 }
 
 extension ExpensesViewController: AddExpenseDelegate {
+    ///
+    /// Callback for when an item has been added. It adds the item to the spotlight's index.
+    ///
     func didAddExpense() {
+        fetch()
         index(item: expenses.count - 1)
     }
 }
 
 extension ExpensesViewController: EditExpenseDelegate {
+    ///
+    /// Callback for when an expense has been edited. It removes the old item from the spotlight's
+    /// index and add the new one.
+    ///
     func didEditExpense(at itemIndex: Int) {
         deindex(item: itemIndex)
         index(item: itemIndex)
@@ -198,6 +206,9 @@ extension ExpensesViewController: EditExpenseDelegate {
 }
 
 extension ExpensesViewController {
+    ///
+    /// Indexes the item so it can be searchable by spotlight
+    ///
     func index(item: Int) {
         let expense = expenses[item]
         
@@ -215,6 +226,9 @@ extension ExpensesViewController {
         }
     }
     
+    ///
+    /// Removes the item from the spotlight's index.
+    ///
     func deindex(item: Int) {
         CSSearchableIndex.default().deleteSearchableItems(withIdentifiers: ["\(item)"]) { error in
             if let error = error {

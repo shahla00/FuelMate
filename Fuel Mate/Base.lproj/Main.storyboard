@@ -287,13 +287,13 @@
                                         <rect key="frame" x="0.0" y="30" width="355" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YO-Bo-0eA">
-                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bIW-32-KGX">
-                                                <rect key="frame" x="55.5" y="0.0" width="299.5" height="30"/>
+                                                <rect key="frame" x="75.5" y="0.0" width="279.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -336,6 +336,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="bIW-32-KGX" firstAttribute="width" secondItem="Ccz-nH-tk6" secondAttribute="width" id="6Gr-Ax-jDj"/>
                                     <constraint firstItem="JUL-YM-eQb" firstAttribute="width" secondItem="Ccz-nH-tk6" secondAttribute="width" id="rRD-Nt-vGP"/>
                                     <constraint firstItem="ATr-TP-8ND" firstAttribute="width" secondItem="Ccz-nH-tk6" secondAttribute="width" id="y4F-3d-mmH"/>
                                 </constraints>
